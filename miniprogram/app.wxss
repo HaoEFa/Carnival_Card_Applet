@@ -1,0 +1,43 @@
+page {
+--themeColor:#BDA066;
+--globalColor:#1a1b1c;
+--focusColor:#4c4d4e;
+--descColor:#7e8081;
+--greyColor:#8e8e8e;
+--subColor:#b1b2b3;
+--lightColor:#e4e4e4;
+--globalBgColor1:#e3e4e5;
+--globa1BgColor2:#f6f7f8;
+--globa1BgColor3:#ffffff;
+}
+view,text {
+  box-sizing: border-box;
+}
+
+.pubTitle {
+   text-align: center;
+}
+
+.pubTitle .en {
+    font-size: 86rpx;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--globalColor);
+    opacity: 0.1;
+}
+
+.pubTitle .cn {
+  font-size: 56rpx;
+  font-weight: 900;
+  transform: translateY(-93rpx);
+}
+
+.pubTitle .line {
+  width:100rpx;
+  height:5rpx;    
+  background:var(--globalColor);
+  display: inline-block;
+  opacity: 0.6;
+  display:inline-block;
+  transform: translateY(-40rpx);
+} 

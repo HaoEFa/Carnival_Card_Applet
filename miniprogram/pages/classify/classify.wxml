@@ -1,0 +1,37 @@
+<khk-handle></khk-handle>
+<view class="banner">
+   <image class="pic" src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/df3ccf82-f275-407e-9b11-8bd95b7fe0b0.jpg" mode="aspectFill"/>
+</view>
+<view class="nav">
+  <van-tabs 
+  active="{{ navNactive }}"  
+  border
+  color="#BDA066"
+  title-active-color="#BDA066"
+  bind:click="navChange">
+  <van-tab 
+  title="{{item.classname}}" 
+  wx:for="{{navArr}}"
+  wx:key="_id"
+  id="myTabs"
+  >
+  </van-tab>
+</van-tabs>
+</view>
+<view class="content">
+  <view class="body">
+  <view class="box" wx:for="{{proArr}}" wx:key="_id">
+     <khk-product-item item="{{item}}"></khk-product-item>
+  </view>
+  </view>
+  <view class="loadOut">
+    <van-loading size="24px" wx:if="{{loading}}">
+           加载中
+    </van-loading>
+    <view class="noData" wx:if="{{isData}}">
+         没有更多数据~
+    </view>
+  </view>
+</view>
+
+<khk-foots></khk-foots>

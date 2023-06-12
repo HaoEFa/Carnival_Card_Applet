@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh":true,
+  "backgroundColorTop":"#BDA066",
+  "backgroundTextStyle":"light",
+  "navigationBarTitleText": "茶叶资讯"
+}

@@ -1,0 +1,10 @@
+<view class="header">
+  <navigator url="" class="logo">
+    <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/0a503ea8-8730-4b26-9e96-b9852ee7b778.jpg" mode="heightFix" class="pic"/>
+  </navigator>
+
+  <view class="search">
+    <!-- <van-icon name="search"  class="van-icon" class=".van-icon"/> -->
+    <van-icon name="phone-o"  class="van-icon" class=".van-icon" bindtap="clickPhone"/>
+  </view>
+</view>

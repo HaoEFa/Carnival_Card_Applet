@@ -1,0 +1,83 @@
+<khk-handle></khk-handle>
+
+<view class="banner">
+  <swiper 	
+  previous-margin="31rpx" 	
+  current="0"
+  autoplay
+  interval="5000" 
+  indicator-dots="true"
+  class="banner_swiper"
+  indicator-color="white"
+  indicator-active-color="#BDA066"
+  >
+      <swiper-item>
+        <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/aa23b0b8-049a-46b8-9386-8df19c3549d7.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/d4f0952a-259f-40b3-ae6c-bb5e76491df3.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/2d412cc1-1e90-4a06-aeb0-fefacafa8bd0.jpg" mode=""/>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/ae4dce6b-1c1a-4711-a8f5-1174533f3172.jpg" mode=""/>
+      </swiper-item>
+    </swiper>
+</view>
+    
+
+<view class="scrollNav">
+  <scroll-view scroll-x>
+    <navigator 
+    open-type="reLaunch" 
+    url="../../pages/classify/classify?idx={{index}}" 
+    class="item" 
+    wx:for="{{navArr}}" 
+    wx:key="_id">
+       <view class="pic">
+         <image src="{{item.icon}}" mode=""/>
+       </view>
+       <view class="text">
+         {{item.classname}}
+       </view>
+    </navigator>
+  </scroll-view>
+</view>
+
+<view class="about">
+  <view class="pubTitle">
+    <view class="en">Eaters</view>
+    <view class="cn">茶馆</view>  
+    <view class="line"></view>
+  </view>
+  <!-- 文字部分 -->
+  <view class="content">
+      <view class="row">
+      白茶，素为茶中珍品，历史悠久，属中国六大茶类之一，具有极高的收藏价值。巷子深茶美文化馆，位于泉城济南，是一家致力于弘扬茶美文化，集白茶销售、品牌、体验、品鉴于一体的综合性企业。
+      </view>
+      <view class="row">
+        巷子深茶美文化馆，传承卓越，与美共勉，以中式传统风格为基础，结合现代时尚格调，将观赏性与实用性、商务与休闲、体验与收藏高度融合，为顾客提供全新的体验式服务。茶舍环境优雅，可以茶会友、修身养性、品鉴收藏，感受白茶独特的文化魅力。
+      </view>
+      <view class="row">
+        从白茶的栽培管理到茶窖存储，每一款产品都释着我们追求完美的品质之心，我们拥有最佳的仓储环境，全系列白茶产品，优质的客户服务，致力于打造创新发展、诚信经营的新标杆
+      </view>
+  </view>
+</view>
+
+<view class="news">
+  <view class="pubTitle">
+    <view class="en">News</view>
+    <view class="cn">新闻资讯</view>  
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="index">       
+      <khk-news-item item="{{item}}">
+      </khk-news-item>
+    </view>
+  
+  </view> 
+</view>
+
+<khk-foots></khk-foots>

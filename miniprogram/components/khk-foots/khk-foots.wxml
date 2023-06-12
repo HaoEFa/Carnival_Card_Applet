@@ -1,0 +1,11 @@
+<view class="footer">
+  <view class="row">Copyright @ {{year}} 版权所有</view>
+  <view class="row">解释权归狂欢卡有限公司所有</view>
+  <view class="row">贵州省贵阳市观山湖区</view>
+</view>
+
+<view class="kefu">
+   <button class="btn" open-type="contact">1</button>
+   <image src="https://mp-94ef3a03-1d21-4f56-bd29-67fea9d262b3.cdn.bspapp.com/cloudstorage/5dbde5d2-f2a5-4212-91c6-902f963afca6.png" mode="aspectFill" class="pic"/>
+   <view class="line"></view>
+</view>
